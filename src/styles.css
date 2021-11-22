@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 110vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  height: 55vh; */
+  background: black;
+}
+
+.list-container {
+  width: 100%;
+  background: black;
+}
+
+li {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.album-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.album-link:hover {
+  background: white;
+  color: black;
+}
+
+header {
+  margin: auto;
+  padding: 1rem;
+  width: 80%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-bg {
+  margin: 1rem auto 1rem auto;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Foofighters-logo.svg/1200px-Foofighters-logo.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 80%;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255);
+}
+
+.nav-link {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 13px;
+  height: 100%;
+  color: black;
+  transition: 0.2s;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* background: rgba(255, 255, 255); */
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+
+.album-div {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items:center;
+  margin: auto;
+  background: black;
+  height: 55vh;
+  width: 100%;
+}
+
+.album-pics {
+  width: 100%;
+  height: 55vh;
+  object-fit: contain;
+}
+
+.album-links {
+  position: absolute;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+}
+
+.album-des {
+    margin-bottom: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.backlink {
+    background-color: rgba(199, 19, 19, 0.7);
+    text-decoration: none;
+}
+
+.pic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  width: 100%;
+  height: 55vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+span {
+  position: absolute;
+  margin-bottom: 15px;
+  padding: 0.6rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.band {
+  background-image: url("https://cdn.wegow.com/media/artists/foo-fighters/foo-fighters-1581339172.4464262.2560x1440.jpg");
+}
+
+.vocals {
+  background-image: url("https://www.augsburger-allgemeine.de/img/bilder/crop58996231/9079568238-cv16_9-w940/Frontmann-Dave-Grohl-tritt-am-07.jpg");
+}
+
+.guitar {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/z2XFhnC3BzBqZtAwaM7TpD-1200-80.jpg");
+}
+
+.bass {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/x9ASpCNKQqXTtHtNktV97L.jpg");
+}
+
+.drums {
+  background-image: url("https://cdn.antenne.de/thumbs/images/galleries/423788/151671_taylor_hawkins_amy_harris_invision_ap_dpa_1200x630.d720fc64.jpg");
+}
+
+.keyboard {
+  background-image: url("https://assets.palmspringslife.com/wp-content/uploads/2018/02/05134802/578c46e591d6e7c9e530fb49ba4c8cba-RamiJaffee.jpg");
+}
+
+.leadguitar {
+  background-image: url("http://www.laut.de/Foo-Fighters/Fotogalerien/Rock-am-Ring,-21018-6445/foo-fighters-rock-am-ring-21018-chris-shiflett-191767.jpg");
+}
+
+.not-found {
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.msg-not-found {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/** Transition Group CSS */
+
+.container {
+  position: relative;
+}
+
+.transition {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Styles for Form-Component */
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.txt-field {
+  padding: .5rem;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-album-btn {
+  padding: .8rem;
+  border: none;
+  background: rgba(199, 19, 19, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+
+.new-album-btn:hover {
+  background-color: rgba(241, 41, 41, 0.7);
+  cursor: pointer;
+}
